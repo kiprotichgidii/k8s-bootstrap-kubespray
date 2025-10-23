@@ -1,4 +1,4 @@
-# Set Up HA Kubernetes Cluster on Ubuntu 24.04 with Kubespray
+# Deploy HA Kubernetes Cluster on Ubuntu 24.04 with Kubespray
 
 Kubespray is an open source, production-grade automation tooling for the deployment and management of highly available Kubernetes clusters on Linux operating systems. It is based on Ansible, and it avails to you full lifecycle management of Kubernetes clusters running in Cloud, on-premise, or hybrid environments. In this guide, we'll cover all the necessary steps when deploying a Highly Available (HA) Kubernetes cluster on Ubuntu 24.04 using Kubespray.
 
