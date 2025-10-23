@@ -339,7 +339,7 @@ Below is a list of commonly used Kubespray options:
 
 Initiate Kubernetes cluster deployment on Ubuntu 24.04 using Kubespray:
 ```bash
-ansible-playbook -i inventory/cluster1/hosts.yaml --become --become-user=root cluster.yml
+ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml
 ```
 The process may take more than 10 minutes depending on your cluster size.
 
