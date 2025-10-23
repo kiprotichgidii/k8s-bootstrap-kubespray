@@ -349,9 +349,10 @@ After successful execution of the playbook, copy kubeconfig from one of the cont
 ```bash
 cd ../
 NODE1=192.168.20.18
-scp root@$NODE1:/etc/kubernetes/admin.conf ./k8s-kubeconfig
+sudo mkdir ~/.kube
+scp root@$NODE1:/etc/kubernetes/admin.conf ~/.kube/kube-config
 ```
-If you have Kube VIP enabled, you will see https://lb-apiserver.kubernetes.local:6443
+If you have Kube VIP enabled, you will see `https://lb-apiserver.kubernetes.local:6443`
 ```yaml
 apiVersion: v1
 clusters:
@@ -380,7 +381,7 @@ $ sudo vim /etc/hosts
 ```
 Set copied kubeconfig in KUBECONFIG env variable:
 ```bash
-export KUBECONFIG=./k8s-kubeconfig
+export KUBECONFIG=~/.kube/kube-config
 ```
 Test access to your newly created kubernetes cluster using kubectl:
 ```bash
